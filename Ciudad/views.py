@@ -14,7 +14,7 @@ def get(request, id=0):
         print(value)
         if len(ciudades) > 0:
             ciudad = ciudades[0]
-            data = {'message':'Success','ciudad':ciudad,'token':token}
+            data = {'message':'Success','ciudad':ciudad}
         else:
             data = {"message":"ciudad not found..."}
         
