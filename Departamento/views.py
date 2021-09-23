@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from api.models import Departamento
 # Create your views here.
+#holaaaaa
 
 def get(request, id=0):
     if id > 0:
