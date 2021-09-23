@@ -14,7 +14,7 @@ def get(request, id=0):
         print(value)
         if len(usuarios) > 0:
             usuario = usuarios[0]
-            data = {'message':'Success','Usuario':usuario,'token':token}
+            data = {'message':'Success','Usuario':usuario}
         else:
             data = {"message":"usuario not found..."}
         

@@ -1,11 +1,11 @@
 import json
 import jwt
 from django.http.response import JsonResponse
-
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from api.models import Departamento
 # Create your views here.
+#holaaaaa
 
 def get(request, id=0):
     if id > 0:
@@ -15,7 +15,7 @@ def get(request, id=0):
         print(value)
         if len(departamentos) > 0:
             departamento = departamentos[0]
-            data = {'message':'Success','departamento':departamento,'token':token}
+            data = {'message':'Success','departamento':departamento}
         else:
             data = {"message":"departamento not found..."}
         
