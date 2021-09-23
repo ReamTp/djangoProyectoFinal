@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
+    'Usuario.apps.UsuarioConfig',
+    'Ciudad.apps.CiudadConfig',
+    'Departamento.apps.DepartamentoConfig',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +81,8 @@ WSGI_APPLICATION = 'djangoProyectoFinal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'apidb',
-        'USER': 'dev',
+        'NAME': 'comidarapidaplus',
+        'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
