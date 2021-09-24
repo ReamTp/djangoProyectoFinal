@@ -22,4 +22,6 @@ urlpatterns = [
     path("apiUsuario/",include("Usuario.urls")),
     path("apiCiudad/",include("Ciudad.urls")),
     path("apiDepartamento/",include("Departamento.urls")),
+    path('categoria/', include('categoria.urls')),
+    path('boleta/', include('boleta.urls')),
 ]
