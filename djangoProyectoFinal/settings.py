@@ -31,8 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'categoria.apps.CategoriaConfig',
-    'boleta.apps.BoletaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,8 +41,8 @@ INSTALLED_APPS = [
     'Usuario.apps.UsuarioConfig',
     'Ciudad.apps.CiudadConfig',
     'Departamento.apps.DepartamentoConfig',
-    
-    
+    'categoria.apps.CategoriaConfig',
+    'boleta.apps.BoletaConfig',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +84,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'apidb',
-        'USER': 'root',
+        'USER': 'dev',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
