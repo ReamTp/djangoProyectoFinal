@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'categoria.apps.CategoriaConfig',
+    'boleta.apps.BoletaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +43,8 @@ INSTALLED_APPS = [
     'Usuario.apps.UsuarioConfig',
     'Ciudad.apps.CiudadConfig',
     'Departamento.apps.DepartamentoConfig',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -81,7 +85,7 @@ WSGI_APPLICATION = 'djangoProyectoFinal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comidarapidaplus',
+        'NAME': 'apidb',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
